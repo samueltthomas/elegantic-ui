@@ -1,14 +1,14 @@
 <template>
-    <div v-bind:class="classes" v-if="show_msg">
-      <i v-if="dismissable!==false" class="close icon" @click="this.closeMessage"></i>
-      <i v-if="icon" v-bind:class="icon_classes"></i>
-      <div class="content">
-        <div v-if="title" class="header">{{title}}</div>
-        <p>
-          <slot></slot>
-        </p>
-      </div>
+  <div v-bind:class="classes" v-if="show_msg">
+    <i v-if="dismissable!==false" class="close icon" @click="this.closeMessage"></i>
+    <i v-if="icon" v-bind:class="icon_classes"></i>
+    <div class="content">
+      <div v-if="title" class="header">{{title}}</div>
+      <p>
+        <slot></slot>
+      </p>
     </div>
+  </div>
 </template>
 
 <script>
