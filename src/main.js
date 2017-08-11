@@ -5,6 +5,7 @@ import Alert from './components/Alert'
 import Grid from './components/Grid'
 import Col from './components/Col'
 import Row from './components/Row'
+import Table from './components/Table'
 
 Vue.config.productionTip = false
 
@@ -12,6 +13,7 @@ Vue.component('eu-alert', Alert)
 Vue.component('eu-grid', Grid)
 Vue.component('eu-col', Col)
 Vue.component('eu-row', Row)
+Vue.component('eu-table', Table)
 
 // document.body.innerHTML = '<div id="eu-app">' + document.body.innerHTML + '</div>'
 
